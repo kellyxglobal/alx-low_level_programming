@@ -6,17 +6,18 @@
  */
 int main(void)
 {
-	int num;
+        int num;
 
-	for (num = 28; num < 38; num++)
-	{
-		putchar(num);
-		if (num != 37)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+        for (num = 28; num < 38; num++)
+        {
+                putchar(num);
+                if (num != 37)
+                {
+                        putchar(',');
+                        putchar(' ');
+                }
+        }
+        putchar('\n');
+        return (0);
 }
+
