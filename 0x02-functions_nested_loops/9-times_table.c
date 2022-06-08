@@ -8,12 +8,12 @@
 void times_table(void)
 {
 	int n = 9;
-	int count = 1;
+	int count = 0;
 
 	do {
-		printf("9 * %d = %d\n", count, n * count);
+		_putchar('d * d = \n', count, n * count);
 		count++;
-	} while (count <= 10);
+	} while (count <= 9);
 
 	return (0);
 }
