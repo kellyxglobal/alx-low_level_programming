@@ -10,7 +10,7 @@
 
 char *_memset(char *s, char b, unsigned int n);
 {
-	int sze = n;
+	int size = n;
 
 	if (size > 0)
 	{
