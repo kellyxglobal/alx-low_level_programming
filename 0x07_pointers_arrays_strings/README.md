@@ -1,0 +1,1 @@
+Mset pointers array strings
