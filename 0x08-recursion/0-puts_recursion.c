@@ -5,7 +5,7 @@
  * @s: Character String
  * Return: \n new line
  */
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
 {
 	char s[] = "Welcome to my world.\n";
 
