@@ -9,7 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	unsigned int i, j, k, l;
+	unsigned int i, j, k, ltd;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -26,15 +26,15 @@ char *str_concat(char *s1, char *s2)
 
 	if (ptr == NULL)
 	{
-		free(strout);
+		free(ptr);
 		return (NULL);
 	}
 
 	for  (k = 0; k < i; k++)
 		ptr[k] = s1[k];
 
-	l = j;
-	for (j = 0; j <= l; k++, j++)
+	ltd = j;
+	for (j = 0; j <= ltd; k++, j++)
 		ptr[k] = s2[j];
 
 	return (ptr);
