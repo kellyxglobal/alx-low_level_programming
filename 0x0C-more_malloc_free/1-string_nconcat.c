@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	kay = ls1 + n;
 
-	kels = malloc(lsout + 1);
+	kels = malloc(kay + 1);
 
 	if (kels == NULL)
 		return (NULL);
