@@ -5,7 +5,7 @@
 
 /**
  * _is_zero - determines if any number is zero
- * @argv: argument vector.
+ * @argv: argument vector prints .
  *
  * Return: no return.
  */
@@ -77,7 +77,7 @@ int _checknum(char *argv[], int n)
  * main - Entry point.
  * program that multiplies two positives numbers.
  * @argc: number of arguments.
- * @argv: arguments vector.
+ * @argv: arguments vector for print outputs.
  *
  * Return: 0 - success.
  */
