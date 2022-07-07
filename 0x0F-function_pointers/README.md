@@ -1,1 +1,1 @@
-This project is about function pointers in C programming language
+This project is about variadic function
