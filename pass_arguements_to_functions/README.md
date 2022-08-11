@@ -1,0 +1,1 @@
+This project is about how to pass arrays and pointers as an arguement to a function with real life scenariors. So hear I am going to write a function that will request user to enter their details and only print the users detail if the supplies his or her password else it should exit the user by printing thank you for your time
