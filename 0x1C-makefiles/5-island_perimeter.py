@@ -1,23 +1,25 @@
 #!/usr/bin/python3
-"""
-Module for island_perimeter() method
-"""
+
+"""File representing an island"""
 
 
 def island_perimeter(grid):
     """
-    Computers the length of the perimeter of an island.
+    Returns the perimeter of an island.
+    Perimeter is 0 if not 1 finded in the array, means there is no island,
+    each time it has a land near it reduce the perimeter value by one or
+    like the same way opposite if there is water add one
     """
-    ret = 0
-    for y, row in enumerate(grid):
-        for x, cell in enumerate(row):
-            if cell == 1:
-                if y == 0 or grid[y - 1][x] == 0:
-                    ret += 1
-                if y == len(grid) - 1 or grid[y + 1][x] == 0:
-                    ret += 1
-                if x == 0 or grid[y][x - 1] == 0:
-                    ret += 1
-                if x == len(row) - 1 or grid[y][x + 1] == 0:
-                    ret += 1
-    return 
+    perimeter = 0
+    for row in range(len(grid)):
+        for col in range(len(grid[row])):
+            if grid[row][col] == 1:
+                if row == 0 or grid[row - 1][col] == 0:
+                    perimeter += 1
+                if row == len(grid) - 1 or grid[row + 1][col] == 0:
+                    perimeter += 1
+                if col == 0 or grid[row][col - 1] == 0:
+                    perimeter += 1
+                if col == len(grid[row]) - 1 or grid[row][col + 1] == 0:
+                    perimeter += 1
+    return (perimeter) 
